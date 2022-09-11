@@ -1,2 +1,1 @@
-# Lilayi_Lodge
-Lilayi Lodge was officially opened in November 1991 and has been well known as one of Lusaka's main attractions for many years. In 2013 the Miller Family decided to completely renovate this iconic piece of Zambian History and create a first class establishment that showcases the best that Zambia has to offer.     The Lilayi Elephant Nursery, located at the entrance to game farm, is a project that is very dear to the family’s heart. Having a long history in supporting wildlife conservation, two hectares of land was donated to Game Rangers International - a non-profit organisation. Through this partnership Lilayi Game Farm has become home to a number of orphaned elephants that have seen the loss of their families due to poaching.
+
