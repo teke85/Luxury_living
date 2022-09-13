@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lilayi Lodge</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Luxury Living - Luxury Accomodation</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,56 +13,92 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <header>
-        <!-- As a link -->
-        <nav class="top-nav align-items-center justify-content-end me-auto navbar bg-dark">
-            <ul class="social-media-icons d-flex align-items-center">
-              <li class="nav-link">
-                <ion-icon
-                  class="me-1 text-white" name="logo-facebook"></ion-icon>
-              </li>
-              <li class="nav-link">
-                <ion-icon class="text-white" name="logo-twitter"></ion-icon>
-              </li>
-              <li class="nav-link text-white" href="#">English</li>
-              <li class="nav-link text-white" href="#">My page</li>
-              <li class="nav-link text-white" href="#">Logout</li>
-            </ul>
-          </div>
+      <!-- Top Navbar -->
+      <nav class="navbar-top">
+        <ul class="navbar-top--links flex">
+          <li class="navbar-top--icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="navbar-top--icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="links"><a href="#">English</a></li>
+          <li class="links"><a href="#">My Page</a></li>
+          <li class="links"><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+      <div class="wrapper">
+        <nav class="navbar-main flex">
+          <img class="logo" src="assets/images/LL-Logo.png" alt="lilayi logo" />
+          <ul class="navbar-main-nav-items">
+            <li class="nav-items"><a href="#">Home</a></li>
+            <li class="nav-items"><a href="#">About Us</a></li>
+            <li class="nav-items"><a href="#">Story</a></li>
+            <li class="nav-items"><a href="#">Gallery</a></li>
+            <li class="nav-items"><a href="#">Contact Us</a></li>
+            <li class="nav-items">
+              <button class="btn book-now-button" type="button">
+                Book Now
+              </button>
+            </li>
+          </ul>
         </nav>
       </div>
-      <div class="main-nav">
-        <nav class="d-flex flex-sm-row-reverse navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container">
-            <a class="navbar-brand" href="#"><img class="logo" src="assets/images/LILAYI LOGO_NEW-01.webp" alt="lilayi logo"></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ms-auto mx-5">
-                <a class="nav-link mx-4 active" aria-current="page" href="#"
-                  >Home</a
-                >
-                <a class="nav-link mx-4" href="#">About Us</a>
-                <a class="nav-link mx-4" href="#">Gallery</a>
-                <a class="nav-link mx-4" href="#">Partners</a>
-                <a class="nav-link mx-4" href="#">Sponsor</a>
-                <button class="book-now-button" type="button">Book Now</button>
-              </div>
-            </div>
+      <section class="hero">
+        <div class="hero-image">
+          <div class="hero-text">
+            <h3>"Hello! Welcome To Luxury Living"</h3>
+            <h1>The market leader in providing luxury accomodation.</h1>
+            <p class="textbox">
+              We pride ourselves in offering first class accomodation coupled
+              with exquisite customer service from our experienced staff.
+            </p>
           </div>
-        </nav>
-      </div>
+        </div>
+      </section>
+      <section class="featured-section">
+        <h2 class="feature-title">Our Services</h2>
+        <hr />
+        <div class="featured-section-wrapper">
+          <div class="feature">
+            <img class="icon" src="assets/images/gym.jpg" alt="" />
+            <h3>Fully Equiped Gym</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="feature">
+            <img class="icon" src="assets/images/swimming.jfif" alt="" />
+            <h3>Awesome swimming pool</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="feature">
+            <img
+              class="icon"
+              src="assets/images/airport-pickup-pix.jpg"
+              alt=""
+            />
+            <h3>Airport Pickup</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="feature">
+            <img class="icon" src="assets/images/restaurant.jpg" alt="" />
+            <h3>First class restaurant</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <button class="btn join-now-button" type="button">Book Now</button>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="testimonials-wrapper">
+          <div class="col-right"></div>
+          <div class="col-left"></div>
+        </div>
+      </section>
+      <section class="section-four"></section>
     </header>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
