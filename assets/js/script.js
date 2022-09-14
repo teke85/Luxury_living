@@ -54,8 +54,9 @@ const clients = [
 
 const myContent = document.querySelector('.myContent')
 
-const showInHtml = clients.map((client, index) => {
-  return `
+const showInHtml = clients
+  .map((client, index) => {
+    return `
         <div class="col d-flex">
             <div class="image-box d-flex">
               <img class="square-img" src=${client.placeholder} alt="" />
@@ -71,7 +72,8 @@ const showInHtml = clients.map((client, index) => {
             </div>
         </div>
     `
-})
+  })
+  .join('')
 
 myContent.innerHTML = showInHtml
 
