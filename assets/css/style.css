@@ -7,9 +7,9 @@
   --bg-color: #272a31;
   --lato-font-family: 'Lato', sans-serif;
   --cocogoose-font-family: 'COCOGOOSE', sans-serif;
-  --h1-fontsize: font-size: 16px;
-  --white-color:#fff;
-  --text-color:#272a31;
+  --h1-fontsize: font-size;
+  --white-color: #fff;
+  --text-color: #272a31;
 }
 
 * {
@@ -282,6 +282,7 @@ body {
   height: 40px;
   object-fit: cover;
 }
+
 .person {
   margin-top: 10px;
   margin-left: -25px;
@@ -564,6 +565,7 @@ body {
     margin-top: 1.9rem;
     font-size: 20px;
   }
+
   .footer-content {
     justify-content: center;
     padding: 1.5rem;
@@ -653,9 +655,9 @@ body {
 }
 
 .about-logo_horizontal-rule {
-text-align: center;
-width: 15%;
-margin: auto;
+  text-align: center;
+  width: 15%;
+  margin: auto;
 }
 
 /** Popular locations **/
@@ -727,10 +729,9 @@ margin: auto;
 }
 
 @media only screen and (min-width: 768px) {
-
-.about {
-  height: 90vh;
-}
+  .about {
+    height: 90vh;
+  }
 
   .about-bg-image {
     background-image: linear-gradient(
@@ -761,12 +762,6 @@ margin: auto;
     text-align: center;
     margin-bottom: 8rem;
     color: var(--primarycolor);
-  }
-
-  .p-sec-col-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .p-sec-col-right {
@@ -800,7 +795,7 @@ margin: auto;
     background-repeat: no-repeat;
     background-position: bottom;
   }
-  
+
   .p-sec-col-right {
     height: 60vh;
     width: 40%;
@@ -813,7 +808,4 @@ margin: auto;
     background-repeat: no-repeat;
     background-position: bottom;
   }
-  
-  
 }
-
