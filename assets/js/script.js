@@ -58,7 +58,7 @@ const showInHtml = clients
   .map((client, index) => {
     return `
         <div class="col d-flex">
-            <div class="image-box d-flex">
+            <div class="image-box d-flex me-4">
               <img class="square-img" src=${client.placeholder} alt="" />
               <img class="person" src=${client.picture} alt="" />
             </div>
