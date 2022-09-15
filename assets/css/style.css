@@ -330,7 +330,8 @@ body {
   width: 150px;
 }
 
-.partners-horizontal-rule {
+.partners-horizontal-rule,
+.cards-horizontal-rule {
   position: absolute;
   margin: 0;
   border: 2px solid#ec5242 !important;
