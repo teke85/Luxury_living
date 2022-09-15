@@ -83,6 +83,10 @@ body {
   font-weight: 500;
 }
 
+.navbar-main-nav-items li a:hover {
+  color: var(--primarycolor);
+}
+
 .nav-items {
   list-style: none;
   margin-right: 2rem;
@@ -94,6 +98,10 @@ body {
   color: black;
 }
 
+.links a:hover {
+  color: var(--primarycolor);
+}
+
 .logo {
   /* height: 100%; */
   object-fit: contain;
@@ -103,7 +111,7 @@ body {
 }
 
 .book-now-button {
-  border: #ec5242 solid 3px !important;
+  border: #ec5242 solid 1px !important;
   color: #ec5242;
   background: #fff;
   text-align: center;
@@ -113,6 +121,15 @@ body {
   width: 150px;
   height: 50px;
   border-radius: 0;
+  transition: 0.3s;
+}
+
+.book-now-button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 16px #ec5242;
+  transform: translateY(4px);
+  color: #fff;
 }
 
 .hero {
@@ -325,6 +342,10 @@ body {
 
 /** Footer section **/
 
+footer {
+  height: 10rem;
+}
+
 .footer-logo {
   object-fit: contain;
   height: 90%;
@@ -336,6 +357,7 @@ body {
 .footer-content {
   display: flex;
   justify-content: space-between;
+  padding: 5rem;
 }
 
 .footer-content-col-right {
@@ -410,6 +432,7 @@ body {
   text-align: left;
   transition: 0.3s;
   z-index: 10;
+  overflow: hidden;
 }
 
 .nav-menu li {
@@ -445,7 +468,7 @@ body {
     height: 36px;
     background-color: rgb(62, 62, 62);
     line-height: 36px;
-    padding-right: 10rem;
+    padding-right: 1rem;
   }
 
   .links {

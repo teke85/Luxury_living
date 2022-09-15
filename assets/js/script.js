@@ -16,7 +16,7 @@ document.querySelectorAll('.nav-link').forEach((n) =>
 const clients = [
   {
     id: 1,
-    fullName: 'Michael Stewart',
+    fullName: 'Peter Andrews',
     title: 'CEO Lake Wood Hotel',
     picture: 'assets/images/head-1.jpg',
     placeholder: 'assets/images/board-01.jpg',
@@ -25,7 +25,7 @@ const clients = [
   },
   {
     id: 2,
-    fullName: 'Michael Stewart',
+    fullName: 'Ray montana',
     title: 'CEO Lake Wood Hotel',
     picture: 'assets/images/head-2.jpg',
     placeholder: 'assets/images/board-01.jpg',
@@ -34,7 +34,7 @@ const clients = [
   },
   {
     id: 3,
-    fullName: 'Michael Stewart',
+    fullName: 'Adam lethbridge',
     title: 'CEO Lake Wood Hotel',
     picture: 'assets/images/head-3.jpg',
     placeholder: 'assets/images/board-01.jpg',
@@ -42,7 +42,7 @@ const clients = [
   },
   {
     id: 4,
-    fullName: 'Michael Stewart',
+    fullName: 'Mary chama',
     title: 'CEO Lake Wood Hotel',
     picture: 'assets/images/head-4.jpg',
     placeholder: 'assets/images/board-01.jpg',
@@ -51,7 +51,7 @@ const clients = [
   },
   {
     id: 5,
-    fullName: 'Michael Stewart',
+    fullName: 'Sarah gale',
     title: 'CEO Lake Wood Hotel',
     picture: 'assets/images/head-5.jpg',
     placeholder: 'assets/images/board-01.jpg',
@@ -92,25 +92,4 @@ const showInHtml = clients
 
 myContent.innerHTML = showInHtml
 
-// const showInHtml = clients.map((client, index) => {
-//   return `
-//         <div class="clients-wrapper">
-//           <div class="col-left">
-//             <img class="square-img" src=${client.placeholder} alt="" />
-//             <img class="person" src=${client.picture} alt="" />
-//           </div>
-//           <div class="col-right">
-//             <div class="ms-3 clients-text-box">
-//               <h3>${client.fullName}</h3>
-//               <hr class="horizontal-rule" />
-//               <span class="fst-italic">${client.title}</span>
-//               <p>
-//                 ${client.message}
-//               </p>
-//             </div>
-//           </div>
-//         </div>
-// `
-// })
 
-// myContent.innerHTML = showInHtml
