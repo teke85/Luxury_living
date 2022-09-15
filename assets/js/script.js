@@ -79,7 +79,7 @@ const showInHtml = clients
             </div>
             <div class="text-box">
               <h3>${client.fullName}</h3>
-              <hr class="horizontal-rule" />
+              <hr class="horizontal-rule" style="border: 2px solid #ec5242; />
               <span class="fst-italic">${client.title}</span>
               <p>
                 ${client.message}

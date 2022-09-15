@@ -359,6 +359,16 @@ body {
   font-weight: 500;
 }
 
+.footer-text-right {
+  margin-left: 0.5rem;
+}
+
+.footer-text h5,
+.footer-text span {
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
 /* Hamburger menu */
 
 .hamburger {
@@ -397,7 +407,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  text-align: center;
+  text-align: left;
   transition: 0.3s;
   z-index: 10;
 }
@@ -568,6 +578,7 @@ body {
   .featured-section-wrapper {
     display: flex;
     flex-direction: row;
+    gap: 0.5rem;
   }
 
   .feature {
