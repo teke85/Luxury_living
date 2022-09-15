@@ -31,7 +31,7 @@ You also need an editor like VS Code or Sublime to edit project files
 2. Navigate to the directory where you would like to run this project from, preferably from your web server directory
 3. Type the following command
 
-> git clone git@github.com:rtonata88/namibia_safaris.git
+> git clone @ (https://github.com/teke85/Luxury_living.git)
 
 ### Usage
 
@@ -39,11 +39,11 @@ Once the project folder is downloaded to your computer, double click on the _ind
 
 ## Authors
 
-👤 **Richard Chambula**
+👤 **Author**
 
-- GitHub: [@rtonata88](https://github.com/rtonata88)
-- Twitter: [@rtonata](https://twitter.com/rtonata)
-- LinkedIn: [Richard Chambula](https://www.linkedin.com/in/richard-chambula-49198425/)
+- GitHub: [@teke85](https://github.com/teke85)
+- Twitter: [@muttau](https://twitter.com/muttau)
+- LinkedIn: [isiteketo mutau](https://www.linkedin.com/in/isiteketo-mutau-736894241/)
 
 ## 🤝 Contributing
 
