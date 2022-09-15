@@ -136,11 +136,12 @@ body {
 }
 
 .hero-image {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       rgba(43, 42, 42, 0.6),
       rgba(151, 147, 147, 0.896)
     ),
-    url(./assets/css/images/bg.jpg);
+    url(images/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 110vh;
@@ -191,7 +192,7 @@ body {
 
 /* Featured Section */
 .featured-section {
-  background-image: url('./assets/css/images/featured-bg.png');
+  background-image: url('images/featured-bg.png');
   padding-bottom: 3rem;
 }
 
@@ -312,7 +313,7 @@ body {
   padding-top: 2rem;
 }
 
-.partners-logo-wrapper {
+.partners-logo-box {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -325,7 +326,8 @@ body {
 }
 
 .partners-horizontal-rule,
-.feature-horizontal-rule .cards-horizontal-rule {
+.feature-horizontal-rule,
+.cards-horizontal-rule {
   width: 100px;
   height: 3px !important;
   background-color: #ec5242 !important;
@@ -335,7 +337,7 @@ body {
 /** Footer section **/
 
 footer {
-  height: 10rem;
+  height: 14rem;
 }
 
 .footer-logo {
@@ -349,7 +351,7 @@ footer {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  padding: 5rem;
+  padding: 2.1rem;
 }
 
 .footer-content-col-right {
@@ -489,6 +491,16 @@ footer {
     margin-right: 0.4rem;
   }
 
+  /* HR Element */
+  .partners-horizontal-rule,
+  .feature-horizontal-rule,
+  .cards-horizontal-rule {
+    width: 100px;
+    height: 3px !important;
+    background-color: #ec5242 !important;
+    margin: auto;
+  }
+
   /* Hamburger menu */
 
   .hamburger {
@@ -546,7 +558,8 @@ footer {
   }
 
   .hero-image {
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         rgba(39, 39, 39, 0.6),
         rgba(58, 57, 57, 0.896)
       ),
@@ -625,15 +638,6 @@ footer {
     padding-top: 5rem;
   }
 
-  .feature-horizontal-rule {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 3px !important;
-    background-color: #ec5242 !important;
-  }
-
   /** Featured clients Section **/
   .clients {
     text-align: center;
@@ -688,7 +692,8 @@ footer {
 /** ABOUT SECTION **/
 
 .about-bg-image {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       rgba(43, 42, 42, 0.6),
       rgba(101, 100, 100, 0.896)
     ),
@@ -782,7 +787,8 @@ footer {
 .p-sec-col-left {
   height: 60vh;
   width: 90%;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       rgba(43, 42, 42, 0.1),
       rgba(101, 100, 100, 0.896)
     ),
@@ -795,7 +801,8 @@ footer {
 .p-sec-col-right {
   height: 60vh;
   width: 90%;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       rgba(43, 42, 42, 0.1),
       rgba(101, 100, 100, 0.896)
     ),
@@ -838,7 +845,8 @@ footer {
   }
 
   .about-bg-image {
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         rgba(43, 42, 42, 0.6),
         rgba(101, 100, 100, 0.896)
       ),
@@ -890,7 +898,8 @@ footer {
   .p-sec-col-left {
     height: 60vh;
     width: 40%;
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         rgba(43, 42, 42, 0.1),
         rgba(101, 100, 100, 0.896)
       ),
@@ -903,7 +912,8 @@ footer {
   .p-sec-col-right {
     height: 60vh;
     width: 40%;
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         rgba(43, 42, 42, 0.1),
         rgba(101, 100, 100, 0.896)
       ),

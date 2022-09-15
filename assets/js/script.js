@@ -1,17 +1,15 @@
-const hamburger = document.querySelector('.hamburger')
-const navMenu = document.querySelector('.nav-menu')
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active')
-  navMenu.classList.toggle('active')
-})
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
 
-document.querySelectorAll('.nav-link').forEach((n) =>
-  n.addEventListener('click', () => {
-    hamburger.classList.remove('active')
-    navMenu.classList.remove('active')
-  })
-)
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+}));
 
 const clients = [
   {
@@ -65,13 +63,13 @@ const clients = [
     placeholder: 'assets/images/board-01.jpg',
     message: 'Amazing company',
   },
-]
+];
 
-const myContent = document.querySelector('.myContent')
+const myContent = document.querySelector('.myContent');
 
 const showInHtml = clients
-  .map((client, index) => {
-    return `
+  .map(
+    (client) => `
         <div class="col d-flex">
             <div class="image-box d-flex me-4">
               <img class="square-img" src=${client.placeholder} alt="" />
@@ -86,10 +84,8 @@ const showInHtml = clients
               </p>
             </div>
         </div>
-    `
-  })
-  .join('')
+    `,
+  )
+  .join('');
 
-myContent.innerHTML = showInHtml
-
-
+myContent.innerHTML = showInHtml;
