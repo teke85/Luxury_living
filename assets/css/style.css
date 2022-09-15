@@ -26,11 +26,6 @@ body {
 
 .navbar-top {
   display: none;
-
-  /* height: 36px;
-  background-color: rgb(62, 62, 62);
-  line-height: 36px;
-  padding-right: 10rem; */
 }
 
 .links {
@@ -103,7 +98,6 @@ body {
 }
 
 .logo {
-  /* height: 100%; */
   object-fit: contain;
   height: 90%;
   display: flex;
@@ -197,7 +191,7 @@ body {
 
 /* Featured Section */
 .featured-section {
-  background-image: url('images/featured-bg.png');
+  background-image: url('./assets/css/images/featured-bg.png');
   padding-bottom: 3rem;
 }
 
@@ -331,14 +325,11 @@ body {
 }
 
 .partners-horizontal-rule,
-.cards-horizontal-rule {
-  position: absolute;
-  margin: 0;
-  border: 2px solid#ec5242 !important;
-  width: 70px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.feature-horizontal-rule .cards-horizontal-rule {
+  width: 100px;
+  height: 3px !important;
+  background-color: #ec5242 !important;
+  margin: auto;
 }
 
 /** Footer section **/
