@@ -78,6 +78,15 @@ body {
   font-weight: 500;
 }
 
+.nav-items a {
+  text-decoration: none;
+  color: black;
+}
+
+.links a:hover {
+  color: var(--primarycolor);
+}
+
 .navbar-main-nav-items li a:hover {
   color: var(--primarycolor);
 }
@@ -86,15 +95,6 @@ body {
   list-style: none;
   margin-right: 2rem;
   font-size: 15px;
-}
-
-.nav-items a {
-  text-decoration: none;
-  color: black;
-}
-
-.links a:hover {
-  color: var(--primarycolor);
 }
 
 .logo {
@@ -393,6 +393,16 @@ footer {
   padding: 0.8rem;
 }
 
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--primarycolor);
+}
+
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
@@ -403,16 +413,6 @@ footer {
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: var(--primarycolor);
 }
 
 .nav-menu {
@@ -823,18 +823,6 @@ footer {
   margin-top: 4rem;
 }
 
-.p-sec-col-left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.p-sec-col-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .popular-sec {
   margin: 8rem 0 8rem 0;
 }
@@ -874,12 +862,6 @@ footer {
     text-align: center;
     margin-bottom: 8rem;
     color: var(--primarycolor);
-  }
-
-  .p-sec-col-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .location {
