@@ -881,7 +881,7 @@ footer {
         rgba(43, 42, 42, 0.1),
         rgba(101, 100, 100, 0.896)
       ),
-      url('../images/p2.jpg');
+      url('images/p2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -894,7 +894,7 @@ footer {
         rgba(43, 42, 42, 0.1),
         rgba(101, 100, 100, 0.896)
       ),
-      url('../images/p1.jpg');
+      url('images/p1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
