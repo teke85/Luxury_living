@@ -1,15 +1,17 @@
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
+const hamburger = document.querySelector('.hamburger')
+const navMenu = document.querySelector('.nav-menu')
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('active');
-});
+  hamburger.classList.toggle('active')
+  navMenu.classList.toggle('active')
+})
 
-document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  navMenu.classList.remove('active');
-}));
+document.querySelectorAll('.nav-link').forEach((n) =>
+  n.addEventListener('click', () => {
+    hamburger.classList.remove('active')
+    navMenu.classList.remove('active')
+  })
+)
 
 const clients = [
   {
@@ -24,7 +26,7 @@ const clients = [
   {
     id: 2,
     fullName: 'Ray montana',
-    title: 'CEO Lake Wood Hotel',
+    title: 'CEO Holiday Inn Hotel',
     picture: 'assets/images/head-2.jpg',
     placeholder: 'assets/images/board-01.jpg',
     message:
@@ -33,7 +35,7 @@ const clients = [
   {
     id: 3,
     fullName: 'Adam lethbridge',
-    title: 'CEO Lake Wood Hotel',
+    title: 'CEO Lilayi Lodge',
     picture: 'assets/images/head-3.jpg',
     placeholder: 'assets/images/board-01.jpg',
     message: 'Luxury Living is by far the best company',
@@ -41,7 +43,7 @@ const clients = [
   {
     id: 4,
     fullName: 'Mary chama',
-    title: 'CEO Lake Wood Hotel',
+    title: 'CEO Kariba Inns',
     picture: 'assets/images/head-4.jpg',
     placeholder: 'assets/images/board-01.jpg',
     message:
@@ -50,7 +52,7 @@ const clients = [
   {
     id: 5,
     fullName: 'Sarah gale',
-    title: 'CEO Lake Wood Hotel',
+    title: 'CEO Grand Palace Hotel',
     picture: 'assets/images/head-5.jpg',
     placeholder: 'assets/images/board-01.jpg',
     message: 'Luxury living is simply the best',
@@ -58,14 +60,14 @@ const clients = [
   {
     id: 6,
     fullName: 'Michael Stewart',
-    title: 'CEO Lake Wood Hotel',
+    title: 'CEO Simbavati Resort',
     picture: 'assets/images/head-6.jpg',
     placeholder: 'assets/images/board-01.jpg',
     message: 'Amazing company',
   },
-];
+]
 
-const myContent = document.querySelector('.myContent');
+const myContent = document.querySelector('.myContent')
 
 const showInHtml = clients
   .map(
@@ -84,8 +86,8 @@ const showInHtml = clients
               </p>
             </div>
         </div>
-    `,
+    `
   )
-  .join('');
+  .join('')
 
-myContent.innerHTML = showInHtml;
+myContent.innerHTML = showInHtml
