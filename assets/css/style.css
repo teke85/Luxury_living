@@ -326,7 +326,8 @@ body {
 
 .partners-horizontal-rule,
 .feature-horizontal-rule,
-.cards-horizontal-rule {
+.cards-horizontal-rule,
+.about-logo_horizontal-rule {
   width: 100px;
   height: 3px !important;
   background-color: #ec5242 !important;
@@ -494,7 +495,8 @@ footer {
   /* HR Element */
   .partners-horizontal-rule,
   .feature-horizontal-rule,
-  .cards-horizontal-rule {
+  .cards-horizontal-rule,
+  .about-logo_horizontal-rule {
     width: 100px;
     height: 3px !important;
     background-color: #ec5242 !important;
