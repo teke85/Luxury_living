@@ -8,9 +8,9 @@ In this Capstone project I built a website for a highend business (Luxury Living
 
 - HTML
 - CSS
-- Bootstrap 5
+- [Bootstrap 5](https://getbootstrap.com/)
 - Javascript
-- Animations on Scroll (AOS) Javascript Plugin
+- [Animations on Scroll (AOS) Javascript Plugin](https://michalsnik.github.io/aos/)
 
 ## Live Demo
 
