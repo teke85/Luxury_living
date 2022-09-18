@@ -2,7 +2,7 @@
 
 # Luxury_Living Capstone Project
 
-In this Capstone project I built a website for a highend business ([Luxury Living]https://teke85.github.io/Luxury_living/) offering luxury accomodation and various other services in Zambia. Luxury Living has been in operation for over ten years and most of its clientele consists of international businesses in the UK and USA.
+In this Capstone project I built a website for a highend business ([Luxury Living](https://teke85.github.io/Luxury_living/)) offering luxury accomodation and various other services in Zambia. Luxury Living has been in operation for over ten years and most of its clientele consists of international businesses in the UK and USA.
 
 ## Built With
 
