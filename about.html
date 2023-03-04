@@ -1,159 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Living - Luxury Accomodation</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luxury Living - Luxury Accomodation</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-
-<body>
-  <header>
-    <!-- Top Navbar -->
-    <nav class="navbar-top">
-      <ul class="navbar-top--links flex">
-        <li class="navbar-top--icons">
-          <a href="#">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
-        <li class="navbar-top--icons">
-          <a href="#">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-        </li>
-        <li class="links"><a href="#">English</a></li>
-        <li class="links"><a href="#">My Page</a></li>
-        <li class="links"><a href="#">Logout</a></li>
-      </ul>
-    </nav>
-
-    <!-- Main Navigation Section-->
-
-    <div class="wrapper">
-      <nav class="navbar-main flex">
-        <img data-aos="fade-in" class="logo" src="assets/images/LL-Logo.png" alt="luxury Living logo" />
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
+  <body>
+    <header>
+      <!-- Top Navbar -->
+      <nav class="navbar-top">
+        <ul class="navbar-top--links flex">
+          <li class="navbar-top--icons">
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
           </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">About Us</a>
+          <li class="navbar-top--icons">
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Story</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Contact Us</a>
-          </li>
-        </ul>
-        <ul class="navbar-main-nav-items">
-          <li data-aos="fade-up" data-aos-duration="800" class="nav-items"><a href="index.html">Home</a></li>
-          <li data-aos="fade-up" data-aos-duration="900" class="nav-items"><a href="about.html">About Us</a></li>
-          <li data-aos="fade-up" data-aos-duration="1000" class="nav-items"><a href="#">Story</a></li>
-          <li data-aos="fade-up" data-aos-duration="1500" class="nav-items"><a href="#">Gallery</a></li>
-          <li data-aos="fade-up" data-aos-duration="2000" class="nav-items"><a href="#">Contact Us</a></li>
-          <li data-aos="fade-up" data-aos-duration="2500" class="nav-items">
-            <button class="btn book-now-button" type="button">
-              Book Now
-            </button>
-          </li>
+          <li class="links"><a href="#">English</a></li>
+          <li class="links"><a href="#">My Page</a></li>
+          <li class="links"><a href="#">Logout</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
 
-  <!-- About Section-->
+      <!-- Main Navigation Section-->
 
-  <section class="about">
-    <div class="about-bg-image">
-      <div class="about-text">
-        <h1 data-aos="fade-up" data-aos-duration="3000">ABOUT LUXURY LIVING.</h1>
-        <p data-aos="fade-up" data-aos-duration="2500" class="about-textbox">
-          Luxury Living is true consecration of natural elegance, luxury is
-          infused in the smallest detail. Time fades away in this Eden
-          flooded with light where the sky puts on a divine display.
-        </p>
-        <p data-aos="fade-up" data-aos-duration="1800" class="about-subheading">
-          Please contact us for any questions about luxury living 2022!
-        </p>
+      <div class="wrapper">
+        <nav class="navbar-main flex">
+          <a href="index.html"
+            ><img
+              data-aos="fade-in"
+              class="logo"
+              src="assets/images/LL-Logo.png"
+              alt="luxury Living logo"
+          /></a>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#partners" class="nav-link">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="navbar-main-nav-items">
+            <li data-aos="fade-up" data-aos-duration="800" class="nav-items">
+              <a href="index.html">Home</a>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="900" class="nav-items">
+              <a href="about.html">About Us</a>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="1000" class="nav-items">
+              <a href="#services">Our services</a>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="1500" class="nav-items">
+              <a href="#partners">Partners</a>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="2000" class="nav-items">
+              <a href="#">Contact Us</a>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="2500" class="nav-items">
+              <button class="btn book-now-button" type="button">
+                Book Now
+              </button>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <h5 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="2000" class="email-address">
-        luxuryliving2022@enquires.com</h5>
-    </div>
-  </section>
+    </header>
 
-  <!-- About Our Logo Section-->
+    <!-- About Section-->
 
-  <section class="about-logo_sec">
-    <div class="about-logo_text-box">
-      <h2>Luxury Living Logo</h2>
-      <hr class="about-logo_horizontal-rule" />
-      <p>The Luxury Living Logo was designed by one of our happy clients</p>
-      <img class="our-logo" data-aos="zoom-in" data-aos-duration="1000" src="./assets/images/LL-Logo.png" alt="" />
-    </div>
-  </section>
-  <section class="popular-sec">
-    <h2 data-aos="fade-up" data-aos-duration="1500">Have a look at some of our popular facilities</h2>
-    <div class="image-wrapper">
-      <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700"
-        class="p-sec-col-left">
-        <h5 class="location">ROYAL LIVINGTONE</h5>
+    <section class="about">
+      <div class="about-bg-image">
+        <div class="about-text">
+          <h1 data-aos="fade-up" data-aos-duration="3000">
+            ABOUT LUXURY LIVING.
+          </h1>
+          <p data-aos="fade-up" data-aos-duration="2500" class="about-textbox">
+            Luxury Living is true consecration of natural elegance, luxury is
+            infused in the smallest detail. Time fades away in this Eden flooded
+            with light where the sky puts on a divine display.
+          </p>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1800"
+            class="about-subheading"
+          >
+            Please contact us for any questions about luxury living 2022!
+          </p>
+        </div>
+        <h5
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-delay="2000"
+          class="email-address"
+        >
+          luxuryliving2022@enquires.com
+        </h5>
       </div>
-      <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700"
-        class="p-sec-col-right">
-        <h5 class="location">SIAVONGA BEACH</h5>
+    </section>
+
+    <!-- About Our Logo Section-->
+
+    <section class="about-logo_sec">
+      <div class="about-logo_text-box">
+        <h2>Luxury Living Logo</h2>
+        <hr class="about-logo_horizontal-rule" />
+        <p>The Luxury Living Logo was designed by one of our happy clients</p>
+        <img
+          class="our-logo"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          src="./assets/images/LL-Logo.png"
+          alt=""
+        />
       </div>
-    </div>
-  </section>
-
-  <!-- Footer Section-->
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-content-col-right">
-        <img data-aos="zoom-in" data-aos-duration="3000" class="footer-logo" src="assets/images/LL-Logo.png"
-          alt="luxury Living logo" />
-        <div class="footer-text-right">
-          <h5 data-aos="zoom-in" data-aos-duration="3000"><strong>Luxury Living Zambia</strong></h5>
+    </section>
+    <section class="popular-sec">
+      <h2 data-aos="fade-up" data-aos-duration="1500">
+        Have a look at some of our popular facilities
+      </h2>
+      <div class="image-wrapper">
+        <div
+          data-aos="zoom-in"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="700"
+          class="p-sec-col-left"
+        >
+          <h5 class="location">ROYAL LIVINGTONE</h5>
+        </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="700"
+          class="p-sec-col-right"
+        >
+          <h5 class="location">SIAVONGA BEACH</h5>
         </div>
       </div>
-      <div class="footer-content-col-left">
-        <div class="footer-text">
-          <h5 data-aos="zoom-in" data-aos-duration="2000"><strong>2022 (c) Luxury Living Zambia</strong></h5>
-          <span data-aos="zoom-in" data-aos-duration="2000"><strong>Copy Rights Reserved</strong></span>
+    </section>
+
+    <!-- Footer Section-->
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-content-col-right">
+          <img
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            class="footer-logo"
+            src="assets/images/LL-Logo.png"
+            alt="luxury Living logo"
+          />
+          <div class="footer-text-right">
+            <h5 data-aos="zoom-in" data-aos-duration="3000">
+              <strong>Luxury Living Zambia</strong>
+            </h5>
+          </div>
+        </div>
+        <div class="footer-content-col-left">
+          <div class="footer-text">
+            <h5 data-aos="zoom-in" data-aos-duration="2000">
+              <strong>2022 (c) Luxury Living Zambia</strong>
+            </h5>
+            <span data-aos="zoom-in" data-aos-duration="2000"
+              ><strong>Copy Rights Reserved</strong></span
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-  </script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-  </script>
-  <script src="assets/js/script.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init()
-  </script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
