@@ -7,12 +7,10 @@ hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
-document.querySelectorAll('.nav-link').forEach((n) =>
-  n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-  })
-);
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+}));
 
 const clients = [
   {
@@ -91,7 +89,7 @@ const showInHtml = clients
               </p>             
             </div>
         </div>
-    `
+    `,
   )
   .join('');
 
@@ -113,7 +111,7 @@ const showExtraRows = clients
               </p>             
             </div>
         </div>
-    `
+    `,
   )
   .join('');
 
@@ -123,12 +121,10 @@ extraRows.innerHTML = showExtraRows;
 // Add event listener to the toggle button
 toggleButton.addEventListener('click', () => {
   extraRows.classList.toggle('d-none');
-  // toggleIcon.classList.toggle('rotate');
-
+  toggleIcon.classList.toggle('rotate');
   if (toggleButton.textContent === 'LESS') {
     toggleButton.textContent = 'MORE';
   } else {
     toggleButton.textContent = 'LESS';
   }
-  console.log(toggleIcon);
 });
