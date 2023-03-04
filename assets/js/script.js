@@ -1,4 +1,9 @@
-/* eslint-disable no-plusplus */
+/* Declare Variables */
+const myContent = document.querySelector('.myContent');
+const toggleButton = document.querySelector('.toggle-button');
+const toggleIcon = document.querySelector('.toggle-icon');
+const extraRows = document.querySelector('.extraRows');
+const spanText = document.getElementById('text');
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -66,11 +71,6 @@ const clients = [
   },
 ];
 
-const myContent = document.querySelector('.myContent');
-const toggleButton = document.querySelector('.toggle-button');
-const toggleIcon = document.querySelector('.toggle-icon');
-const extraRows = document.querySelector('.extraRows');
-
 const showInHtml = clients
   .slice(0, 2)
   .map(
@@ -122,9 +122,44 @@ extraRows.innerHTML = showExtraRows;
 toggleButton.addEventListener('click', () => {
   extraRows.classList.toggle('d-none');
   toggleIcon.classList.toggle('rotate');
-  if (toggleButton.textContent === 'LESS') {
-    toggleButton.textContent = 'MORE';
+
+  if (spanText.textContent === 'LESS') {
+    spanText.textContent = 'MORE';
   } else {
-    toggleButton.textContent = 'LESS';
+    spanText.textContent = 'LESS';
   }
 });
+
+// Define the scroll-to-top button element
+const scrollToTopBtn = document.getElementById('scroll-to-top');
+
+// Define the scrollFunction
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = 'block';
+  } else {
+    scrollToTopBtn.style.display = 'none';
+  }
+}
+
+// Define the function to handle the scroll event
+function handleScroll() {
+  scrollFunction();
+}
+
+// Show the button when user scrolls down 20px
+window.onscroll = handleScroll;
+
+// Define the topFunction
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+// Define the function to handle the click event
+function handleClick() {
+  topFunction();
+}
+
+// Scroll to top when button is clicked
+scrollToTopBtn.onclick = handleClick;

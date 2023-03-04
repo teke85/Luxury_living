@@ -16,6 +16,13 @@
   </head>
 
   <body>
+    <button type="button" id="scroll-to-top" onclick="topFunction()">
+      <img
+        class="scroll-button"
+        src="assets/images/icons/angle-down-solid.svg"
+        alt=""
+      />
+    </button>
     <header>
       <!-- Top Navbar -->
       <nav class="navbar-top">
@@ -59,10 +66,10 @@
               <a href="about.html" class="nav-link">About Us</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Story</a>
+              <a href="#services" class="nav-link">Our Services</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Gallery</a>
+              <a href="#partners" class="nav-link">Partners</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Contact Us</a>
@@ -76,10 +83,10 @@
               <a href="about.html">About Us</a>
             </li>
             <li data-aos="fade-up" data-aos-duration="1000" class="nav-items">
-              <a href="#">Story</a>
+              <a href="#services">Our Services</a>
             </li>
             <li data-aos="fade-up" data-aos-duration="1500" class="nav-items">
-              <a href="#">Gallery</a>
+              <a href="#partners">Partners</a>
             </li>
             <li data-aos="fade-up" data-aos-duration="2000" class="nav-items">
               <a href="#">Contact Us</a>
@@ -115,7 +122,7 @@
 
     <!-- Our Services Section-->
 
-    <section class="featured-section">
+    <section id="services" class="featured-section">
       <h2 class="feature-title">Our Services</h2>
       <hr class="feature-horizontal-rule" />
       <div class="featured-section-wrapper">
@@ -204,7 +211,7 @@
       ></div>
       <div class="text-center mt-3">
         <button type="button" class="toggle-button mb-5">
-          <span>MORE</span>
+          <span id="text">MORE</span>
           <img
             class="toggle-icon"
             src="assets/images/icons/angle-down-solid.svg"
@@ -216,7 +223,7 @@
 
     <!-- Partners Section-->
 
-    <section class="partners">
+    <section id="partners" class="partners">
       <h2>Partners</h2>
       <hr class="partners-horizontal-rule" />
       <div class="partners-logo-wrapper">

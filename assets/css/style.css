@@ -71,6 +71,20 @@ body {
   box-shadow: rgba(0, 0, 0, 0.3) 0 2px 8px 0;
   justify-content: space-between;
   max-width: 100% !important;
+  background-color: #fff;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; */
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .navbar-main-nav-items {
@@ -954,4 +968,40 @@ footer {
 /* Rotate the icon when the .rotate class is applied */
 .toggle-icon.rotate {
   transform: rotate(180deg);
+}
+
+/* add scroll to top button */
+
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 25%;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-button {
+  z-index: 1000;
+  width: 0.5rem;
 }
