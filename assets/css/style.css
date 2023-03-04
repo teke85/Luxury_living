@@ -826,7 +826,6 @@ footer {
   margin-bottom: 8rem;
   margin-top: 4rem;
   color: var(--primarycolor);
-
 }
 
 .popular-sec {
@@ -913,4 +912,46 @@ footer {
     background-repeat: no-repeat;
     background-position: bottom;
   }
+}
+
+.feature-clients .toggle-button {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 50px;
+  background-color: #ec5242;
+  color: #fff;
+  outline: none;
+  border: none !important;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.feature-clients .toggle-button:hover {
+  color: #ffff;
+}
+
+.extraRows {
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.extraRows.d-none {
+  opacity: 1;
+}
+
+.toggle-icon {
+  width: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate the icon when the .rotate class is applied */
+.toggle-icon.rotate {
+  transform: rotate(180deg);
 }

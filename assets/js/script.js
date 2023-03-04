@@ -1,17 +1,18 @@
-const hamburger = document.querySelector('.hamburger')
-const navMenu = document.querySelector('.nav-menu')
+/* eslint-disable no-plusplus */
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active')
-  navMenu.classList.toggle('active')
-})
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
 
 document.querySelectorAll('.nav-link').forEach((n) =>
   n.addEventListener('click', () => {
-    hamburger.classList.remove('active')
-    navMenu.classList.remove('active')
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
   })
-)
+);
 
 const clients = [
   {
@@ -65,11 +66,15 @@ const clients = [
     placeholder: 'assets/images/board-01.jpg',
     message: 'Amazing company',
   },
-]
+];
 
-const myContent = document.querySelector('.myContent')
+const myContent = document.querySelector('.myContent');
+const toggleButton = document.querySelector('.toggle-button');
+const toggleIcon = document.querySelector('.toggle-icon');
+const extraRows = document.querySelector('.extraRows');
 
 const showInHtml = clients
+  .slice(0, 2)
   .map(
     (client) => `
         <div class="col d-flex">
@@ -83,11 +88,47 @@ const showInHtml = clients
               <span class="fst-italic">${client.title}</span>
               <p>
                 ${client.message}
-              </p>
+              </p>             
             </div>
         </div>
     `
   )
-  .join('')
+  .join('');
 
-myContent.innerHTML = showInHtml
+const showExtraRows = clients
+  .slice(2, 6)
+  .map(
+    (client) => `
+        <div class="col d-flex">
+            <div class="image-box d-flex me-4">
+              <img class="square-img" src=${client.placeholder} alt="" />
+              <img class="person" src=${client.picture} alt="" />
+            </div>
+            <div class="text-box">
+              <h3>${client.fullName}</h3>
+              <hr class="horizontal-rule" style="border: 2px solid #ec5242; />
+              <span class="fst-italic">${client.title}</span>
+              <p>
+                ${client.message}
+              </p>             
+            </div>
+        </div>
+    `
+  )
+  .join('');
+
+myContent.innerHTML = showInHtml;
+extraRows.innerHTML = showExtraRows;
+
+// Add event listener to the toggle button
+toggleButton.addEventListener('click', () => {
+  extraRows.classList.toggle('d-none');
+  // toggleIcon.classList.toggle('rotate');
+
+  if (toggleButton.textContent === 'LESS') {
+    toggleButton.textContent = 'MORE';
+  } else {
+    toggleButton.textContent = 'LESS';
+  }
+  console.log(toggleIcon);
+});
