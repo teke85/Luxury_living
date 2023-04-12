@@ -47,19 +47,19 @@ In this Capstone project I built a website for a highend business ([Luxury Livin
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+**To get a local copy up and running follow these simple example steps.**
 
-Download the Zip or (git clone)[https://github.com/teke85/Luxury_living]
+- Download the Zip or (git clone)[https://github.com/teke85/Luxury_living]
 
-cd Luxury_Living
+- cd Luxury_Living
 
-Then open in your browser by using live server
+- Then open in your browser by using live server
 
 ### Prerequisites
 
-A basic understanding of Git, Github, HTML, CSS and Bootstrap is needed to setup and modify this project.
+- A basic understanding of Git, Github, HTML, CSS and Bootstrap is needed to setup and modify this project.
 
-You also need an editor like VS Code or Sublime to edit project files
+- You also need an editor like VS Code or Sublime to edit project files
 
 ### Install
 
